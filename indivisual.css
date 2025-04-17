@@ -1,0 +1,107 @@
+/* Set the background image to cover the entire screen */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #66afe7;
+/*    background: url('freepik__enhance__87284.png') no-repeat center center fixed; 
+    background-size: cover;  Ensure the image covers the full viewport 
+        background-position: center -23px;  Move the image 100px down */
+
+}
+
+.heading-container {
+    position:center;
+    top: 5%;
+    text-align: center;
+    width: 100%;
+}
+
+.main-heading {
+    font: 600 36px 'Luxurious Roman', serif;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.filter-panel {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjusted for a compact look */
+    max-width: 90%;
+}
+
+.filter-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px; /* Even spacing between elements */
+}
+
+.filter-label {
+    color: black;
+    font: 400 18px 'Luxurious Roman', serif; /* Adjusted size */
+    text-align: left;
+}
+
+.text-input,
+.dropdown-field {
+    background-color: #D0EAFA; /* Blue background */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 14px; /* Adjusted font size */
+    color: black;
+    width: 100%;
+}
+
+.generate-button {
+    border-radius: 20px;
+    background-color: #D0EAFA;
+    align-self: center;
+    margin-top: 20px;
+    width: 120px;
+    color: black;
+    font: 400 16px 'Luxurious Roman', serif;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.generate-button:hover {
+    background-color: #b8dcef; /* Slight hover effect */
+}
+
+@media (max-width: 991px) {
+    .filter-panel {
+        padding: 20px;
+        width: 90%;
+        height:50% ;
+    }
+
+    .main-heading {
+        font-size: 28px;
+    }
+
+    .generate-button {
+        white-space: nowrap;
+    }
+}

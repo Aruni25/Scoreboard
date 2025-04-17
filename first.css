@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+      .enrollment-container {
+        background-color: rgba(252, 253, 255, 1);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        color: rgba(255, 255, 255, 1);
+        font: 700 48px Lora, sans-serif;
+      }
+      
+      .hero-image {
+        aspect-ratio: 2.83;
+        object-position: center;
+        width: 265vh;
+        height: 50vh;
+      }
+      
+      .enrollment-title {
+        color: rgba(39, 106, 161, 1);
+        font-size: 45px;
+        font-weight: 500;
+        font-family: "Kaisei Tokumin", serif;
+        letter-spacing: -2.04px;
+        align-self: center;
+        margin: 12px 0 0;
+      }
+      
+      .enrollment-options {
+          
+        align-self: center;
+        display: flex;
+        width: 80%;
+        max-width: 1158px;
+        
+        white-space: nowrap;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      
+      .student-option {
+          font-size: 35px;
+          background-image: url("b.png");
+          background-size: cover;
+          height: 38vh;
+          width: 38vh;
+        border-radius: 50px;
+        padding: 62px 18px;
+      }
+      
+      .faculty-option {
+          background-image: url("b.png");
+          background-size: cover;
+          height: 38vh;
+          width: 38vh;
+          font-size: 35px;
+        border-radius: 50px;
+         padding: 62px 18px;
+      }
+      a{
+        text-decoration: none;
+        color: white;
+      }
+      a:hover{
+        box-shadow: 0 5px #4d8bbd;
+        transform: translateY(4px);  
+        opacity: 0.8;
+      }
+      @media (max-width: 991px) {
+        .enrollment-container {
+          font-size: 40px;
+        }
+      
+        .hero-image {
+          max-width: 100%;
+        }
+      
+        .enrollment-title {
+          max-width: 100%;
+          font-size: 26px;
+        }
+      
+        .enrollment-options {
+          max-width: 100%;
+          white-space: initial;
+        }
+      
+        .student-option {
+          
+          white-space: initial;
+        }
+      
+        .faculty-option {
+          font-size: 30px;
+          white-space: initial;
+        }
+      
+      }
+      
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
