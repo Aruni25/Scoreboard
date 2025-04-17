@@ -1,0 +1,113 @@
+ body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+    }
+
+    .signup-container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex: 1;
+      background-color: #f8fcff;
+    }
+
+    .form-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #f8fcff;
+    }
+
+    .signup-wrapper {
+      background-color: #D0EAFA;
+      padding: 30px;
+      border-radius: 21px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 50%;
+      max-width: 400px;
+    }
+
+    .signup-heading {
+      color: #158ED1;
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+       font-family: 'Georgia', serif; 
+    }
+
+    .form-group {
+      width: 100%;
+      margin-bottom: 15px;
+     
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #333;
+       font-family: 'Georgia', serif; 
+    }
+
+    .form-input {
+      width: 95%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+    }
+
+    .submit-button {
+       width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #158ED1;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: block; 
+  margin: 0 auto; 
+    }
+
+    .submit-button:hover {
+      background-color: #158ED1;
+    }
+
+    .image-column {
+      flex: 0.82;
+  background-color: #6ab3db;
+  background-image: url('https://cdn.builder.io/api/v1/image/assets/TEMP/40d5f9c8d14bb8dac06be443360265d64063722a0a63f00355b8a8ed2a53e14d?placeholderIfAbsent=true&apiKey=69dcfc83bd48480aa5d75b3c711dd446');
+  background-size: cover;
+  background-position: center;
+  border: 8px solid white; 
+  box-sizing: border-box; 
+    }
+
+    @media (max-width: 768px) {
+      .signup-container {
+        flex-direction: column;
+      }
+
+      .form-column, .image-column {
+        flex: none;
+        width: 100%;
+      }
+
+      .image-column {
+        height: 200px;
+        background-size: cover;
+      }
+    }

@@ -1,0 +1,168 @@
+body {
+      margin: 0;
+      font-family: 'Kantumruy Pro', sans-serif;
+    }
+
+    .login-container {
+      display: flex;
+      height: 100vh;
+      background-color: rgba(252, 253, 255, 1);
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex: 1;
+    }
+  .form-group {
+      width: 100%;
+      margin-bottom: 15px;
+     
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #333;
+       font-family: 'Georgia', serif; 
+    }
+
+    .form-input {
+      width: 95%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+    }
+    .image-column {
+      flex: 0.5;
+      background-image: url('https://cdn.builder.io/api/v1/image/assets/TEMP/aefe504ac9525269db632d2fa711e079a91102e58cd28bd460cb847d4b39bd40?placeholderIfAbsent=true&apiKey=69dcfc83bd48480aa5d75b3c711dd446');
+      background-size: cover;
+      background-color: #6ab3db;
+      background-position: center;
+    }
+
+    .form-column {
+      flex: 0.6;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-wrapper {
+      background-color: rgba(208, 234, 250, 1);
+      padding: 30px 40px;
+      border-radius: 30px;
+      text-align: center;
+      width: 80%;
+      max-width: 400px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-title {
+      font-size: 36px;
+      color: rgba(21, 142, 209, 1);
+      margin-bottom: 15px;
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .input-field {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .login-button {
+           width: 40%;
+  padding: 11px;
+  border: none;
+  border-radius: 20px;
+  background-color: #158ED1;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: block; 
+  margin: 0 auto;
+    }
+
+    
+    .google-login {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+    }
+
+    .google-icon {
+        margin:10px;
+        margin-left: 10px;
+      width: 22px;
+      height: 22px;
+      margin-right: 0px;
+    }
+  .google-button {
+ display: flex;
+  align-items: center;
+  justify-content:center;
+  padding: 10px 23px;
+  width: 220px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  color: #555555;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow: hidden; 
+}
+
+
+.google-button img {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px; 
+  margin-right: 10px;
+  border-radius: 50%; 
+  object-fit: cover;
+}
+
+.google-button:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+    @media (max-width: 768px) {
+      .content-wrapper {
+        flex-direction: column;
+      }
+
+      .image-column {
+      flex: 0.82; 
+      background-color: #6ab3db;
+  background-image: url('https://cdn.builder.io/api/v1/image/assets/TEMP/40d5f9c8d14bb8dac06be443360265d64063722a0a63f00355b8a8ed2a53e14d?placeholderIfAbsent=true&apiKey=69dcfc83bd48480aa5d75b3c711dd446');
+  background-size: cover;
+  background-position: center;
+  border: 8px solid white; 
+  box-sizing: border-box; 
+      }
+
+      .form-column {
+        flex: none;
+        padding: 20px;
+      }
+    }
