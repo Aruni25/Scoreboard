@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+        overflow-x: hidden; 
+
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+     background-color: #66afe7;
+/*    background: url('freepik__enhance__87284.png') no-repeat center center fixed; 
+    background-size: cover;  Ensure the image covers the full viewport 
+        background-position: center -10px;  Move the image 100px down */
+
+}
+
+.heading-container {
+    position:center;
+    top: 5%;
+    text-align: center;
+    width: 100%;
+}
+
+.main-heading {
+    font: 600 36px 'Luxurious Roman', serif;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.filter-panel {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px; 
+    max-width: 90%;
+}
+
+.filter-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.filter-label {
+    color: black;
+    font: 400 18px 'Luxurious Roman', serif; 
+    text-align: left;
+}
+
+.text-input,
+.dropdown-field {
+    background-color: #D0EAFA;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 14px; 
+    color: black;
+    width: 100%;
+}
+
+.generate-button {
+    border-radius: 20px;
+    background-color: #D0EAFA;
+    align-self: center;
+    margin-top: 20px;
+    width: 120px;
+    color: black;
+    font: 400 16px 'Luxurious Roman', serif;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.generate-button:hover {
+    background-color: #b8dcef; 
+}
+
+@media (max-width: 991px) {
+    .filter-panel {
+        padding: 20px;
+        width: 90%;
+        height:50% ;
+    }
+
+    .main-heading {
+        font-size: 28px;
+    }
+
+    .generate-button {
+        white-space: nowrap;
+    }
+}
+
+table {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+    border-collapse: collapse; 
+    width: 60%; 
+    max-width: 60%; 
+    table-layout: auto; 
+    word-wrap: break-word; 
+    font-size: 14px; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 20px;
+    width: 100%;
+            z-index: 1; 
+
+}
+
+
+th, td {
+    padding: 5px; 
+    text-align: center;
+    font-size: 14px; 
+    color: black;
+    word-break: break-word; 
+        z-index: 1; 
+
+}
+
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+th {
+    background-color: #D0EAFA;
+    font-weight: bold;
+    font-size: 14px; 
+    color: black;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 12px; 
+        width: 80%; 
+    }
+    th, td {
+        padding: 5px; 
+    }
+}
+.background-container {
+    width: 100%;
+    height: 100vh; 
+    background-image: url('sky.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+
+.background-container-with-opacity {
+    background-image: url('sky.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1; 
+}
+.filter-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.semester-wrapper {
+  position: relative;
+}
+
+#semester {
+  width: 100%; 
+  z-index: 10; 
+}
+
+
+#semester option {
+  background-color: #fff; 
+  color: #333; 
+  padding: 8px;
+}
+
+.result-container {
+    background-image: url('<%= request.getContextPath() %>/sky.jpg');
+    background-size: cover; 
+    background-position: center;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+}

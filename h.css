@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.hero-container {
+    background-color: #fff;
+    display: flex;
+    /* height: 50vh; */
+    /* padding-bottom: 197px; */
+    flex-direction: column;
+    /* overflow: hidden; */
+  }
+  .nav-wrapper {
+    background-color: #5F92B5;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    color: #D0EAFA;
+    padding: 20px 20px;
+    font: 400 24px Tiro Kannada, sans-serif;
+  }
+  .nav-links {
+    display: flex;
+    width: 568px;
+    max-width: 100%;
+    gap: 20px 66px;
+  }
+  .nav-link {
+    color: #CDE9FA;
+    flex-grow: 1;
+  }
+  .nav-link-home {
+    text-decoration: none;
+    width: 130px;
+  }
+  
+  .nav-link-Upload
+  {
+     text-decoration: none !important;
+  width: 190px;
+  }
+  .nav-link-about {
+    text-decoration: none;
+    width: 190px;
+  }
+  .nav-link-contact {
+    text-decoration: none;
+    width: 170px;
+  }
+  .content-wrapper {
+    align-self: flex-end;
+    margin-top: 158px;
+    width: 100%;
+    height: 50vh;
+    max-width: 1394px;
+  }
+  .content-columns {
+    gap: 150px;
+    display: flex;
+  }
+  .text-column {
+      
+    margin-top: -90px;
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 100%;
+    margin-left: -5vh;
+  }
+  .text-content {
+    height: fit-content;
+    width: 100%;
+    margin-left: 10vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Kaisei Tokumin", serif;
+    color: #113C7D;
+    font-weight: 400;
+  }
+  .hero-title {
+    position: absolute;
+    line-height: 60%;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  .title-emphasis {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .hero-description {
+    font-family: "Luxurious Roman", serif;
+    font-size: 18px;
+    margin-top: 90px;
+    width: 95%;
+  }
+  .cta-button {
+    border-radius: 60px;
+    background-color: #276AA1;
+    align-self: flex-start;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: -0.09px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  .image-column {
+     
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 45%;
+    margin-left: -15px;
+    margin-top: -90px;
+    /* overflow: hidden; */
+  }
+  .hero-image {
+    height: fit-content;
+    aspect-ratio: 0.22;
+    object-fit: contain;
+    object-position: top;
+    /* width: 100%; */
+    flex-grow: 1;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .hero-container {
+      padding-bottom: 100px;
+    }
+    .nav-wrapper {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+    .content-wrapper {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+    .content-columns {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+    .text-column {
+      width: 100%;
+    }
+    .text-content {
+      max-width: 100%;
+      margin-top: 22px;
+    }
+    .hero-title {
+      max-width: 100%;
+      margin-right: 20px;
+      font-size: 40px;
+    }
+    .hero-description {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+    .cta-button {
+      margin-top: 40px;
+      padding: 10px 10px;
+    }
+    .image-column {
+      width: 100%;
+    }
+    .hero-image {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  }
+  .features-section {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 12px 32px ;
+  }
+  
+  .features-heading {
+    margin-top: 30px;
+    color: #276AA1;
+    text-align: center;
+    align-self: center;
+    font: 400 40px Luxurious Roman, sans-serif;
+  }
+  
+  .features-grid {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font: 400 18px Luxurious Roman, sans-serif;
+    width: 33%;
+  }
+  
+  .feature-image {
+    aspect-ratio: 1.32;
+    object-fit: contain;
+    width: 100%;
+    height: 47%;
+    border-radius: 40px;
+  }
+  
+  .feature-title {
+    color: #113C7D;
+    align-self: center;
+    margin-top: 8px;
+    font: 20px Magra, sans-serif;
+    font-family: "Kaisei Tokumin", serif;
+  }
+  
+  .feature-description {
+    color: #2c619e;
+    margin-top: 8px;
+    width: 88%;
+    margin-left: 3.5vh;
+    font-size: 10px;
+    font-weight: 600;
+    font-family: "Kaisei Tokumin", serif;
+  }
+  
+  .generate-btn {
+    border-radius: 50px;
+    background-color: #276AA1;
+    align-self: center;
+    margin-top: 28px;
+    width: 112px;
+    color: #fff;
+    padding: 7px 29px 12.5px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+    font-size: medium;
+  }
+  
+  @media (max-width: 991px) {
+    .features-section {
+      padding: 0 20px 100px;
+    }
+  
+    .features-heading {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  
+    .features-grid {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      margin-top: 40px;
+    }
+  
+    .feature-card {
+      width: 100%;
+      margin-top: 40px;
+    }
+  
+    .generate-btn {
+      padding: 0 20px;
+    }
+  }
+  body 
+{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f8fb;
+}
+
+.about-section 
+{
+  background-color: #6AB3DB;
+  text-align: center;
+  padding: 20px 20px;
+  color: #ffffff;
+}
+
+.section-title 
+{
+  font-size: 38px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-family: "Kaisei Tokumin", serif;
+}
+
+.icon-container 
+{
+  display: flex;
+  justify-content: center; /* Center all images */
+  align-items: center; /* Align images vertically */
+  gap: 40px; /* Adjust spacing between images */
+}
+
+
+.icon 
+{
+  width: 120px; /* Uniform size for all images */
+  height: 120px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex; /* Ensures consistent alignment */
+  justify-content: center; /* Centers the content inside */
+  align-items: center; /* Vertically centers the image */
+}
+
+.icon:hover 
+{
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.white-section {
+  padding: 30px 20px;
+  margin: 0; /* Remove any unnecessary gaps */
+}
+.description {
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 800px;
+  font-family: "Kaisei Tokumin", serif;
+  margin-top: 6vh;
+  text-align: center;
+  color: #0b4372;
+}
+
+.bottom-line {
+  background-color: #6AB3DB; 
+  height: 20px; 
+  width: 100%; 
+  margin: 0;
+  position: relative; 
+  bottom: 0; 
+  left: 0; 
+}
+.icon-container-exact {
+  position: relative; 
+  width: 100%; 
+  height: 150px; 
+  margin: 0 auto;
+}
+
+.icon-exact {
+  position: absolute; /* Allows precise placement */
+  width: 190px;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.icon-exact:hover {
+  transform: scale(1.1); /* Zoom in */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+}
+/* Position the house image (left) */
+.icon-house {
+  top: -19px; /* Adjust vertical position */
+  left: 5%; /* Adjust horizontal position */
+}
+.icon-center-container {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex; /* Use flex for alignment */
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Match the icon width */
+  height: 250px; /* Match the icon height */
+}
+/* Position the search image (center) */
+.icon-search {
+  position: relative; /* Removes any absolute positioning conflicts */
+  width: 100%; /* Ensure it fits within the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Position the phone image (right) */
+.icon-phone {
+  top: -19px; /* Adjust vertical position */
+  right: 9%; /* Adjust horizontal position */
+}
